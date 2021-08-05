@@ -28,4 +28,8 @@ class HomeController extends Controller
         $user = Auth::user();
         return view('home', compact('user'));
     }
+
+    public function getUserRole($email) {
+        $user = User::where('email', $email) -> first();
+    }
 }

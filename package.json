@@ -11,7 +11,7 @@
     },
     "devDependencies": {
         "@vue/compiler-sfc": "^3.0.11",
-        "axios": "^0.21",
+        "axios": "^0.21.1",
         "bootstrap": "^4.6.0",
         "jquery": "^3.6",
         "laravel-mix": "^6.0.0-beta.17",
@@ -26,6 +26,15 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "vue-router": "^4.0.8"
+        "bootstrap-icons": "^1.5.0",
+        "bootstrap-vue": "^2.21.2",
+        "es6-promise": "^4.2.8",
+        "fuse.js": "^6.4.6",
+        "primeicons": "^4.1.0",
+        "primevue": "^3.6.0",
+        "vee-validate": "^4.4.1",
+        "vue-router": "^4.0.8",
+        "vuex": "^4.0.1",
+        "yup": "^0.32.9"
     }
 }

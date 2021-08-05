@@ -1,14 +1,23 @@
 <template>
     <div class="container-fluid">
-        <app-header></app-header>
-        <router-view />
+        <component :is="layout + '-layout'" v-if="layout"></component>
     </div>
 </template>
 
 <script>
-import AppHeader from "./Components/AppHeader";
+import MainLayout from './layout/MainLayout'
+import AuthLayout from './layout/AuthLayout'
+import {useRoute} from 'vue-router'
+import {computed} from 'vue'
 export default {
-    components: {AppHeader}
+    setup() {
+        const route = useRoute()
+
+        return {
+            layout: computed(()=> route.meta.layout)
+        }
+    },
+    components: {MainLayout, AuthLayout}
 }
 </script>
 
